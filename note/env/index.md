@@ -1,6 +1,6 @@
 ---
 title: WSL2のセットアップ # ★★★ このページの具体的なタイトル (例: WSL2, VS Code, GitHubの基本操作 など)
-date: YYYY-MM-DD # ★★★ このページを作成/更新した日付
+date: 2025-05-08 # ★★★ このページを作成/更新した日付
 description: Windows Subsystem for Linux 2 (WSL2) のインストールと基本的な設定手順について解説します。 # (任意) ページの説明
 # tags: [Windows, Linux, 開発環境] # (任意)
 # parent: 開発環境構築 # (任意) 親カテゴリ名を明示する場合 (テーマによっては参照される)

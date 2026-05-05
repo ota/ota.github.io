@@ -1,7 +1,8 @@
-# Welcome to My Research Notes!
+---
+nav_title: Home
+order: 0
+---
 
-This is the first page of my new research notes site.
+# ota's notes
 
-Hello World from GitHub Pages!
-
-- update: 5/8
+Research and development notes — a personal knowledge base.

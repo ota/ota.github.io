@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --header-bg: #111116;
+      --header-border: #1f1f27;
+      --nav-text: #71717a;
+      --nav-hover: #e4e4e7;
+      --accent: #818cf8;
+      --bg: #ffffff;
+      --text: #374151;
+      --heading: #111827;
+      --muted: #9ca3af;
+      --border: #f3f4f6;
+      --link: #6366f1;
+      --code-bg: #f9fafb;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    /* ── Header / Tabs ── */
+    .header {
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--header-border);
+      display: flex;
+      align-items: stretch;
+      padding: 0 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .site-name {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #e4e4e7;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding-right: 1.75rem;
+      margin-right: 0.25rem;
+      flex-shrink: 0;
+      border-right: 1px solid var(--header-border);
+    }
+
+    .tabs {
+      display: flex;
+      list-style: none;
+      align-items: stretch;
+    }
+
+    .tabs a {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: 0.875rem;
+      color: var(--nav-text);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: color 0.1s, border-color 0.1s;
+      white-space: nowrap;
+    }
+
+    .tabs a:hover { color: var(--nav-hover); }
+
+    .tabs a.active {
+      color: var(--nav-hover);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ── Content ── */
+    .content-wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3.5rem 2.5rem 6rem;
+    }
+
+    /* ── Page header (front matter title あり) ── */
+    .page-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .page-header h1 {
+      font-size: 1.875rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--heading);
+      line-height: 1.25;
+    }
+
+    .page-meta {
+      margin-top: 0.6rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .page-description {
+      margin-top: 0.875rem;
+      color: #6b7280;
+      font-size: 0.975rem;
+      line-height: 1.6;
+      padding-left: 1rem;
+      border-left: 2px solid var(--accent);
+    }
+
+    .page-divider {
+      height: 1px;
+      background: var(--border);
+      margin-top: 1.875rem;
+    }
+
+    /* ── Article ── */
+    article h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--heading);
+      line-height: 1.25;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    article h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--heading);
+      letter-spacing: -0.02em;
+      margin-top: 2.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    article h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    article h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--heading);
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    article p { margin-bottom: 1.25rem; }
+
+    article ul, article ol {
+      padding-left: 1.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    article li { margin-bottom: 0.3rem; }
+
+    article a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
+    article a:hover { color: var(--accent); }
+
+    article strong { color: var(--heading); font-weight: 600; }
+
+    article code {
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+      font-size: 0.875em;
+      background: var(--code-bg);
+      border: 1px solid #e5e7eb;
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      color: #4338ca;
+    }
+
+    article pre {
+      background: #16161e;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    article pre code {
+      background: none;
+      border: none;
+      padding: 0;
+      color: #c8c8e8;
+      font-size: 0.875rem;
+    }
+
+    article blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 1.25rem;
+      color: #6b7280;
+      margin: 1.5rem 0;
+      font-style: italic;
+    }
+
+    article blockquote p { margin-bottom: 0; }
+
+    article hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    article th, article td {
+      padding: 0.6rem 0.75rem;
+      border: 1px solid #e5e7eb;
+    }
+
+    article th {
+      background: var(--code-bg);
+      font-weight: 600;
+      color: var(--heading);
+    }
+
+    article img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 0.5rem 0;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        padding: 0 1.25rem;
+      }
+
+      .site-name {
+        padding: 0.875rem 0;
+        border-right: none;
+        border-bottom: 1px solid var(--header-border);
+        margin-right: 0;
+      }
+
+      .tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .tabs::-webkit-scrollbar { display: none; }
+
+      .tabs a { padding: 0.75rem 0.875rem; }
+
+      .content-wrap { padding: 2rem 1.25rem 3rem; }
+
+      .page-header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <ul class="tabs">
+      {% assign nav_pages = site.pages | sort: "order" %}
+      {% for p in nav_pages %}
+        {% assign tab_label = p.nav_title | default: p.title %}
+        {% if p.dir == "/" and tab_label %}
+          <li>
+            <a href="{{ p.url | relative_url }}"
+               {% if p.url == page.url %}class="active"{% endif %}>{{ tab_label }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </header>
+
+  <main>
+    <div class="content-wrap">
+      {% if page.title %}
+      <header class="page-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}<div class="page-meta">{{ page.date | date: "%Y-%m-%d" }}</div>{% endif %}
+        {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+        <div class="page-divider"></div>
+      </header>
+      {% endif %}
+      <article>
+        {{ content }}
+      </article>
+    </div>
+  </main>
+</body>
+</html>

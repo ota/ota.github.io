@@ -1,14 +1,14 @@
-title: "ota's notes"
-description: "Research and development notes"
+title: "Kengo Ohta"
+description: "Personal web site"
 url: "https://ota.github.io"
 baseurl: ""
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
+    - scope:
+          path: ""
+      values:
+          layout: default

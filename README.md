@@ -1,2 +1,2 @@
 # ota.github.io
-Lab Notebook
+Kengo Ohta's Personal web site

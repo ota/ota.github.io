@@ -3,7 +3,7 @@ nav_title: Profile
 order: 0
 ---
 
-# 太田 健吾
+# 太田 健吾 / Kengo Ohta (ota)
 
 阿南工業高等専門学校 准教授 / 豊橋技術科学大学 客員准教授。博士（工学）。
 
@@ -14,7 +14,7 @@ order: 0
 ## 所属
 
 **[阿南工業高等専門学校](https://www.anan-nct.ac.jp/)** 創造技術工学科 情報コース 准教授  
-**豊橋技術科学大学** 大学院工学研究科 客員准教授 （**[音声言語処理研究室](https://slp.cs.tut.ac.jp/)**）  
+**[豊橋技術科学大学](https://www.tut.ac.jp/)** 大学院工学研究科 客員准教授 （**[音声言語処理研究室](https://slp.cs.tut.ac.jp/)**）  
 **[株式会社 Harmonized Interactions](https://harmonized-interactions.com/)** 取締役
 
 ## 主要な研究業績
@@ -56,7 +56,8 @@ End-to-End 音声認識モデルを目標ドメインに適応させるために
 
 ## 主要な受賞
 
-**[ACC TOKYO CREATIVITY AWARDS ACCゴールド（クリエイティブイノベーション部門）](https://prtimes.jp/main/html/rd/p/000000013.000097754.html)**  
-AI DIALOGUE with Saya (2022)
+**[ACC TOKYO CREATIVITY AWARDS ACCゴールド クリエイティブイノベーション部門 (2022)](https://prtimes.jp/main/html/rd/p/000000013.000097754.html)**  
+[Artificial Emotional Intelligence "Saya"](https://aei-saya.jp/)の音声合成の研究開発を担当しました。
 
-**国立高等専門学校教員顕彰 若手部門 理事長賞 (2022)**　　
+**[国立高等専門学校教員顕彰 若手部門 理事長賞 (2022)](https://www.anan-nct.ac.jp/notifications/29427/)**  
+全国51校55キャンパスの国立高専から推薦された候補者の上位4名に選ばれました。

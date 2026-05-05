@@ -14,13 +14,14 @@
       --font-body: 'Inter', 'Zen Kaku Gothic New', "Hiragino Sans", "Yu Gothic", sans-serif;
       --font-display: 'DM Sans', 'Zen Kaku Gothic New', sans-serif;
 
-      --bg: #fafaf9;
-      --text: #111111;
-      --body: #3c3c3c;
-      --muted: #888;
-      --border: #e8e8e8;
-      --pre-bg: #111111;
-      --code-bg: #f0f0ee;
+      --bg: #f5f4f0;
+      --surface: #ffffff;
+      --text: #1f2933;
+      --body: #1f2933;
+      --muted: #667085;
+      --border: #e6e3dc;
+      --pre-bg: #1f2933;
+      --code-bg: #eceae4;
       --link: #1d4ed8;
     }
 
@@ -271,6 +272,13 @@
     }
 
     article img { max-width: 100%; border-radius: 8px; }
+
+    /* ── Surface ── */
+    .card,
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
 
     /* ── Mobile ── */
     @media (max-width: 600px) {

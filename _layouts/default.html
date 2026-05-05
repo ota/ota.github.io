@@ -5,28 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --text: #0a0a0a;
-      --body: #404040;
-      --muted: #737373;
-      --border: #e5e5e5;
-      --code-bg: #f5f5f5;
-      --pre-bg: #0d0d0d;
-      --link: #2563eb;
+      --bg: #fafaf9;
+      --text: #111111;
+      --body: #3c3c3c;
+      --muted: #888;
+      --border: #e8e8e8;
+      --pre-bg: #111111;
+      --code-bg: #f0f0ee;
+      --link: #1d4ed8;
     }
 
     html { font-size: 15px; }
 
     body {
       font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
-      background: #fff;
+      background: var(--bg);
       color: var(--body);
-      line-height: 1.75;
+      line-height: 1.8;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -35,17 +36,15 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
       padding: 0 2rem;
     }
 
     .header-inner {
-      max-width: 720px;
+      max-width: 660px;
       margin: 0 auto;
-      height: 52px;
+      height: 54px;
       display: flex;
       align-items: center;
     }
@@ -53,7 +52,7 @@
     .site-name {
       font-size: 0.875rem;
       font-weight: 700;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.02em;
       color: var(--text);
       text-decoration: none;
       margin-right: auto;
@@ -63,6 +62,7 @@
       list-style: none;
       display: flex;
       height: 100%;
+      gap: 0.125rem;
     }
 
     .tabs li {
@@ -74,77 +74,84 @@
     .tabs a {
       display: flex;
       align-items: center;
-      padding: 0 0.875rem;
+      padding: 0 0.75rem;
       font-size: 0.8125rem;
       font-weight: 500;
       color: var(--muted);
       text-decoration: none;
-      position: relative;
-      transition: color 0.12s;
-    }
-
-    .tabs a::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0.875rem;
-      right: 0.875rem;
-      height: 1px;
-      background: var(--text);
-      transform: scaleX(0);
-      transition: transform 0.15s ease;
+      transition: color 0.1s;
     }
 
     .tabs a:hover { color: var(--text); }
 
-    .tabs a.active { color: var(--text); font-weight: 600; }
-    .tabs a.active::after { transform: scaleX(1); }
+    .tabs a.active {
+      color: var(--text);
+      font-weight: 600;
+    }
 
     /* ── Content ── */
     .content-wrap {
-      max-width: 720px;
+      max-width: 660px;
       margin: 0 auto;
-      padding: 4rem 2rem 8rem;
+      padding: 4.5rem 2rem 9rem;
+    }
+
+    /* ── Home hero ── */
+    .home article h1:first-child {
+      font-size: clamp(2.75rem, 7vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -0.06em;
+      line-height: 1.05;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+      margin-top: 0;
+    }
+
+    .home article p:first-of-type {
+      font-size: 1.0625rem;
+      color: var(--muted);
+      line-height: 1.7;
     }
 
     /* ── Page header ── */
     .page-header { margin-bottom: 3rem; }
 
     .page-header h1 {
-      font-size: 2rem;
+      font-size: 2.375rem;
       font-weight: 800;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.055em;
       color: var(--text);
-      line-height: 1.2;
+      line-height: 1.15;
     }
 
     .page-meta {
       margin-top: 0.625rem;
       font-size: 0.8125rem;
       color: var(--muted);
+      letter-spacing: 0.01em;
     }
 
     .page-description {
       margin-top: 0.875rem;
-      font-size: 0.9375rem;
+      font-size: 1rem;
       color: var(--muted);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     .page-divider {
       height: 1px;
       background: var(--border);
-      margin-top: 2rem;
+      margin-top: 2.25rem;
     }
 
     /* ── Article ── */
     article h1 {
-      font-size: 1.75rem;
+      font-size: 1.875rem;
       font-weight: 800;
       letter-spacing: -0.04em;
       color: var(--text);
       line-height: 1.2;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
       margin-bottom: 0.75rem;
     }
 
@@ -153,7 +160,7 @@
       font-weight: 700;
       letter-spacing: -0.02em;
       color: var(--text);
-      margin-top: 3rem;
+      margin-top: 3.5rem;
       margin-bottom: 0.625rem;
     }
 
@@ -161,7 +168,7 @@
       font-size: 1rem;
       font-weight: 600;
       color: var(--text);
-      margin-top: 2rem;
+      margin-top: 2.25rem;
       margin-bottom: 0.5rem;
     }
 
@@ -169,18 +176,18 @@
       font-size: 0.9375rem;
       font-weight: 600;
       color: var(--text);
-      margin-top: 1.5rem;
+      margin-top: 1.75rem;
       margin-bottom: 0.4rem;
     }
 
-    article p { margin-bottom: 1.25rem; }
+    article p { margin-bottom: 1.375rem; }
 
     article ul, article ol {
       padding-left: 1.5rem;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.375rem;
     }
 
-    article li { margin-bottom: 0.25rem; }
+    article li { margin-bottom: 0.3rem; }
 
     article a {
       color: var(--link);
@@ -194,6 +201,8 @@
 
     article strong { font-weight: 600; color: var(--text); }
 
+    article em { font-style: italic; }
+
     article code {
       font-family: 'SF Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
       font-size: 0.8125em;
@@ -206,9 +215,9 @@
     article pre {
       background: var(--pre-bg);
       border-radius: 10px;
-      padding: 1.25rem 1.5rem;
+      padding: 1.375rem 1.625rem;
       overflow-x: auto;
-      margin: 1.75rem 0;
+      margin: 2rem 0;
       line-height: 1.65;
     }
 
@@ -220,10 +229,11 @@
     }
 
     article blockquote {
-      border-left: 2px solid #d4d4d4;
-      padding: 0.25rem 0 0.25rem 1.25rem;
+      border-left: 2px solid #d0d0d0;
+      padding: 0.125rem 0 0.125rem 1.375rem;
       color: var(--muted);
-      margin: 1.75rem 0;
+      margin: 2rem 0;
+      font-style: italic;
     }
 
     article blockquote p { margin-bottom: 0; }
@@ -231,13 +241,13 @@
     article hr {
       border: none;
       border-top: 1px solid var(--border);
-      margin: 3rem 0;
+      margin: 3.5rem 0;
     }
 
     article table {
       width: 100%;
       border-collapse: collapse;
-      margin: 1.75rem 0;
+      margin: 2rem 0;
       font-size: 0.875rem;
     }
 
@@ -247,7 +257,7 @@
     }
 
     article th {
-      background: #fafafa;
+      background: #f0f0ee;
       font-weight: 600;
       color: var(--text);
       font-size: 0.8125rem;
@@ -263,14 +273,15 @@
         height: auto;
         flex-wrap: wrap;
         padding: 0.75rem 0;
-        gap: 0.375rem;
+        gap: 0.25rem;
       }
 
-      .site-name { margin-right: 0; width: 100%; }
+      .site-name { width: 100%; margin-right: 0; }
 
       .tabs {
         overflow-x: auto;
         scrollbar-width: none;
+        gap: 0;
       }
 
       .tabs::-webkit-scrollbar { display: none; }
@@ -278,19 +289,19 @@
 
       .tabs a {
         padding: 0.375rem 0.625rem;
-        border-radius: 6px;
+        border-radius: 5px;
         white-space: nowrap;
       }
 
-      .tabs a::after { display: none; }
-      .tabs a.active { background: #f0f0f0; }
+      .tabs a.active { background: #ebebea; }
 
-      .content-wrap { padding: 2.5rem 1.25rem 4rem; }
-      .page-header h1 { font-size: 1.625rem; }
+      .content-wrap { padding: 2.5rem 1.25rem 5rem; }
+
+      .page-header h1 { font-size: 1.875rem; }
     }
   </style>
 </head>
-<body>
+<body {% if page.url == "/" %}class="home"{% endif %}>
   <header class="header">
     <div class="header-inner">
       <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>

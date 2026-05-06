@@ -2,6 +2,7 @@
 title: Works
 nav_title: Works
 order: 3
+description: "太田健吾のデモ・ツール・OSS貢献。音声AIアプリ、CLIツール、ESPnetへのコントリビューションなど。"
 ---
 
 ## Research and Development

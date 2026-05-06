@@ -1,6 +1,7 @@
 ---
 nav_title: Profile
 order: 0
+description: "阿南工業高等専門学校 准教授・太田健吾（Kengo Ohta）のウェブサイト。音声言語処理・自然言語処理・AIの教育応用を研究。共同研究・技術相談受付中。"
 ---
 
 # 太田 健吾 / Kengo Ohta (ota)

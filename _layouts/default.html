@@ -9,6 +9,41 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.1.1/700.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.1.1/display-700.css">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="Kengo Ohta">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+  {% if page.url == "/" or page.url == "/index.html" %}
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "太田健吾",
+    "alternateName": "Kengo Ohta",
+    "url": "{{ site.url }}",
+    "jobTitle": "准教授",
+    "affiliation": [
+      { "@type": "Organization", "name": "阿南工業高等専門学校" },
+      { "@type": "Organization", "name": "豊橋技術科学大学" }
+    ],
+    "sameAs": [
+      "https://researchmap.jp/kohta",
+      "https://github.com/ota"
+    ],
+    "knowsAbout": ["音声言語処理", "自然言語処理", "機械学習", "AIの教育応用"]
+  }
+  </script>
+  {% endif %}
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 

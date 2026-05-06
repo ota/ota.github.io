@@ -2,6 +2,7 @@
 title: Laboratory
 nav_title: Laboratory
 order: 1
+description: "阿南高専太田研究室では、音声言語処理を中心に、生成AI・LLMを含むAIに関する幅広いテーマを研究しています。AIに関する共同研究や技術相談も受け付けています。"
 ---
 
 阿南高専太田研究室では、音声言語処理を中心に、AIに関する幅広いテーマを研究しています。  

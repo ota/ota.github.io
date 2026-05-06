@@ -5,7 +5,7 @@
 ## Pages
 
 - [Profile](https://ota.github.io/): 所属・主要研究業績・受賞・外部資金・共同研究募集
-- [Laboratory](https://ota.github.io/laboratory): 阿南高専太田研究室の紹介。研究環境・指導学生の学会発表実績（2014年〜）
+- [Laboratory](https://ota.github.io/laboratory): 阿南高専太田研究室の紹介。研究環境・指導学生の学会発表実績（2014年〜）。研究室・学生への支援・寄附金も歓迎。
 - [Teaching](https://ota.github.io/teaching): 担当授業・校務担当一覧（2013年〜）
 - [Works](https://ota.github.io/works): 研究開発・デモ・ツール・OSS貢献
 

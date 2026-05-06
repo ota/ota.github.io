@@ -1,5 +1,5 @@
 ---
-title: Teaching
+title: Teaching - 校務・担当授業
 nav_title: Teaching
 order: 2
 meta_description: "太田健吾の担当授業・校務担当一覧（2013年〜）。情報リテラシー、機械学習基礎、言語処理、データサイエンスなどの授業と、クラス担任・部活顧問などの校務を年度別に掲載。"

@@ -1,5 +1,5 @@
 ---
-title: Laboratory
+title: Laboratory - 研究室
 nav_title: Laboratory
 order: 1
 meta_description: "阿南高専太田研究室の紹介。音声言語処理・生成AI・LLMを含む幅広いAIテーマを研究。GPU・AI開発環境などの研究設備と指導学生の学会発表実績（2014年〜）を掲載。研究室・学生への支援・寄附金も歓迎。"

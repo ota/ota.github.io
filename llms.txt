@@ -1,0 +1,26 @@
+# Kengo Ohta (ota)
+
+> 阿南工業高等専門学校 准教授・豊橋技術科学大学 客員准教授。音声言語処理・自然言語処理・AIの教育応用を専門とする研究者。博士（工学）。共同研究・技術相談受付中。
+
+## Pages
+
+- [Profile](https://ota.github.io/): 所属・主要研究業績・受賞・外部資金・共同研究募集
+- [Laboratory](https://ota.github.io/laboratory): 阿南高専太田研究室の紹介。研究環境・指導学生の学会発表実績（2014年〜）
+- [Teaching](https://ota.github.io/teaching): 担当授業・校務担当一覧（2013年〜）
+- [Works](https://ota.github.io/works): 研究開発・デモ・ツール・OSS貢献
+
+## Research Areas
+
+音声言語処理（音声認識・音声合成・音声対話システム）、自然言語処理、生成AI・LLM応用、AIの教育応用
+
+## Affiliations
+
+- 阿南工業高等専門学校 創造技術工学科 情報コース 准教授
+- 豊橋技術科学大学 大学院工学研究科 客員准教授（音声言語処理研究室）
+- 株式会社 Harmonized Interactions 取締役
+
+## Links
+
+- researchmap: https://researchmap.jp/kohta
+- GitHub: https://github.com/ota
+- Email: kengo [at] anan-nct.ac.jp

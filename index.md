@@ -7,7 +7,7 @@ order: 0
 
 阿南工業高等専門学校 准教授 / 豊橋技術科学大学 客員准教授。博士（工学）。
 
-音声認識・音声対話システム・学習支援システムを主な研究テーマとしています。
+音声言語処理、自然言語処理、AIの教育応用について研究しています。
 
 [researchmap](https://researchmap.jp/kohta) · [GitHub](https://github.com/ota)
 
@@ -54,6 +54,12 @@ End-to-End 音声認識モデルを目標ドメインに適応させるために
 *Speech Communication*, 2021  
 雑談音声対話システムにおける応答タイプ選択の精度を向上させるために、ユーザ発話の単語系列を LSTM で処理し、マルチタスク学習により応答タイプを分類する手法を提案しました。
 
+**[Text-to-speech system for low-resource language using cross-lingual transfer learning and data augmentation](https://link.springer.com/article/10.1186/s13636-021-00225-4)**  
+Z. Byambadorj, R. Nishimura, A. Ayush, **K. Ohta**, N. Kitaoka  
+*EURASIP Journal on Audio, Speech, and Music Processing*, 2021  
+音声データの少ない低資源言語の音声合成を実現するために、英語・日本語の大規模コーパスで事前学習したモデルに対して、言語を横断した転移学習とデータ拡張を組み合わせました。
+
+
 ## 主要な受賞
 
 **[ACC TOKYO CREATIVITY AWARDS ACCゴールド クリエイティブイノベーション部門 (2022)](https://prtimes.jp/main/html/rd/p/000000013.000097754.html)**  
@@ -61,3 +67,33 @@ End-to-End 音声認識モデルを目標ドメインに適応させるために
 
 **[国立高等専門学校教員顕彰 若手部門 理事長賞 (2022)](https://www.anan-nct.ac.jp/notifications/29427/)**  
 卒研生の研究指導や高専プロコン・ロボコンの指導を中心とする教育業績により、全国51校55キャンパスの国立高専から推薦された候補者の中の上位4名に選ばれました。
+
+## 外部資金
+
+**電力制約のある学校環境下で動作可能な教育DXアシスタント基盤のための  
+音声言語エッジAI基盤**  
+中部電気利用基礎研究振興財団 研究助成、2026–2028、代表、R-07218
+
+**[教育効果を考慮した大規模音声言語モデルに基づく教材生成AIの構築](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K06322)**  
+科研費 基盤研究(C)、2024–2027、代表、24K06322
+
+**[高齢者を対象とした永続的に利用できるマルチモーダル対話システム基盤技術の構築](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23H00493)**  
+科研費 基盤研究(A)、2023–2027、分担、23H00493
+
+**[人間の感覚と整合する音声特徴空間の構築](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-22K19793)**  
+科研費 挑戦的研究(萌芽)、2022–2025、分担、22K19793
+
+**画像と音声、対話履歴などを利用した対話システムの構築**  
+共同研究（民間企業）、2021–2025
+
+**[オンライン講義の学びを活性化するソーシャルアノテーションに基づく講義要約システム](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21K13641)**  
+科研費 若手研究、2021–2024、代表21K13641
+
+**[プレゼンテーションスキルの向上を支援する模範音声の自動生成システム](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18K18170)**  
+科研費 若手研究、2018–2021、代表、18K18170
+
+**認知力トレーニングを目的とした事例ベース雑談音声対話システムの研究開発**  
+総務省 SCOPE、2017–2019、分担
+
+**[自然な発話による音声インタラクションのための言語モデルに関する研究](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-11J07766)**  
+科研費 特別研究員奨励費（DC2）、2011–2012、代表、11J07766

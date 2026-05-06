@@ -1,8 +1,10 @@
 ---
 title: Works
 nav_title: Works
-order: 1
+order: 3
 ---
+
+※公開可能なものに限定しています。
 
 ## Demo
 

@@ -8,8 +8,8 @@ order: 1
 
 卒研生はデスクを一人1台利用でき、イトーキのオフィスチェアやAK Racingのゲーミングチェアなどを人数分備えています。
 
-研究室の連絡のために Slack Pro を導入しています。  
 ChatGPT Business あるいは Claude Team のいずれか希望する方を、すべての卒研生およびプレ卒研（創ゼミ）生が利用できます。
+また、研究室の連絡のために Slack Pro を導入しています。  
 
 GPUサーバーとして NVIDIA RTX 6000 Ada, RTX A6000 x 2 のほか、
 MacBook Pro M4 Max 128GB, MacBook Pro M4 Max 48GB を必要に応じて利用できます。  

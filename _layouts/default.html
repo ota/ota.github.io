@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.1.1/700.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.1.1/display-700.css">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="Kengo Ohta">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
@@ -18,7 +18,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
   {% if page.url == "/" or page.url == "/index.html" %}
@@ -380,8 +380,7 @@
       <header class="page-header">
         <h1>{{ page.title }}</h1>
         {% if page.date %}<div class="page-meta">{{ page.date | date: "%Y-%m-%d" }}</div>{% endif %}
-        {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
-        <div class="page-divider"></div>
+<div class="page-divider"></div>
       </header>
       {% endif %}
       <article>

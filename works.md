@@ -2,7 +2,7 @@
 title: Works
 nav_title: Works
 order: 3
-description: "太田健吾のデモ・ツール・OSS貢献。音声AIアプリ、CLIツール、ESPnetへのコントリビューションなど。"
+meta_description: "太田健吾の研究開発・デモ・ツール・OSS貢献。感情音声AI「Saya」の研究開発、ブラウザ動作の姿勢検出デモ、ESPnetへのコントリビューションなど。"
 ---
 
 ## Research and Development

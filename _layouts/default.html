@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/fonts/400.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/fonts/500.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/fonts/600.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/fonts/700.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/fonts/display-700.css' | relative_url }}">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -41,7 +39,7 @@
       "https://researchmap.jp/kohta",
       "https://github.com/ota"
     ],
-    "knowsAbout": ["音声言語処理", "自然言語処理", "機械学習", "AIの教育応用"]
+    "knowsAbout": ["音声言語処理", "音声認識", "音声合成", "自然言語処理", "生成AI", "LLM", "機械学習", "AIの教育応用"]
   }
   </script>
   {% endif %}
@@ -315,8 +313,7 @@
     article img { max-width: 100%; border-radius: 8px; }
 
     /* ── Surface ── */
-    .card,
-    section {
+    .card {
       background: var(--surface);
       border: 1px solid var(--border);
     }

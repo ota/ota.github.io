@@ -4,19 +4,29 @@ nav_title: Laboratory
 order: 1
 ---
 
-阿南高専太田研究室は古い建物にありますが、学生が研究に集中できるように、より良い環境の整備を目指しています。
+阿南高専太田研究室では、音声言語処理を中心に、AIに関する幅広いテーマを研究しています。  
+研究指導では、学生がアイデアを実際に動くシステムとして形にする経験を大切にしています。
+
+研究室は古い建物にありますが、学生が研究に集中できるように、より良い環境の整備を目指しています。
 
 卒研生はデスクを一人1台利用でき、イトーキのオフィスチェアやAK Racingのゲーミングチェアなどを人数分備えています。
 
-ChatGPT Business あるいは Claude Team のいずれか希望する方を、すべての卒研生およびプレ卒研（創ゼミ）生が利用できます。
-また、研究室の連絡のために Slack Pro を導入しています。  
+ChatGPT Business と Claude Team のいずれか希望する方を、すべての卒研生およびプレ卒研（創ゼミ）生が利用できます。 また、研究室の連絡のために Slack Pro を導入しています。  
 
-GPUサーバーとして NVIDIA RTX 6000 Ada, RTX A6000 x 2 のほか、
-MacBook Pro M4 Max 128GB, MacBook Pro M4 Max 48GB を必要に応じて利用できます。  
+GPU サーバーとして NVIDIA RTX 6000 Ada、 RTX A6000 x 2 のほか、
+MacBook Pro M4 Max 128 GB、 MacBook Pro M4 Max 48 GB を必要に応じて利用できます。  
 研究室の Google Colab Pro+ も利用できます。
 
 学生に広い世界を経験してほしいと思っており、学会発表を奨励しています。  
-また、研究室メンバーによる[Google渋谷オフィスの見学](https://www.anan-nct.ac.jp/event/47928/)などを実施しています。
+また、研究室メンバーによる[Google 渋谷オフィスの見学](https://www.anan-nct.ac.jp/event/47928/)などを実施しています。
+
+<div markdown="1" style="background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:1.25rem 1.5rem 0; margin:2rem 0;">
+
+**研究室へのご支援を歓迎しています。**  
+寄附金や物品のご提供は、学生の研究環境整備や学会発表などに活用します。  
+まずはお気軽にメールでご相談ください: kengo \[at\] anan-nct.ac.jp
+
+</div>
 
 ## 指導学生の学会発表実績
 

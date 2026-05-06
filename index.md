@@ -7,9 +7,18 @@ order: 0
 
 阿南工業高等専門学校 准教授 / 豊橋技術科学大学 客員准教授。博士（工学）。
 
-音声言語処理、自然言語処理、AIの教育応用について研究しています。
+音声言語処理、自然言語処理、AI の教育応用について研究しています。
 
 [researchmap](https://researchmap.jp/kohta) · [GitHub](https://github.com/ota)
+
+<div markdown="1" style="background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:1.25rem 1.5rem 0; margin:2rem 0;">
+
+**AIに関する共同研究や技術相談を受け付けています。**  
+（例. 音声AIアプリ、LLMの導入、チャットボット構築、教育向けAIシステム）  
+まずはお気軽にメールでご相談ください: kengo \[at\] anan-nct.ac.jp
+</div>
+
+
 
 ## 所属
 
@@ -57,7 +66,7 @@ End-to-End 音声認識モデルを目標ドメインに適応させるために
 **[Text-to-speech system for low-resource language using cross-lingual transfer learning and data augmentation](https://link.springer.com/article/10.1186/s13636-021-00225-4)**  
 Z. Byambadorj, R. Nishimura, A. Ayush, **K. Ohta**, N. Kitaoka  
 *EURASIP Journal on Audio, Speech, and Music Processing*, 2021  
-音声データの少ない低資源言語の音声合成を実現するために、英語・日本語の大規模コーパスで事前学習したモデルに対して、言語を横断した転移学習とデータ拡張を組み合わせました。
+学習データの少ない低資源言語の音声合成を実現するために、英語・日本語の大規模コーパスで事前学習したモデルに対して、言語を横断した転移学習とデータ拡張を組み合わせました。
 
 
 ## 主要な受賞

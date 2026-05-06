@@ -13,8 +13,8 @@ order: 0
 
 ## 所属
 
-**[阿南工業高等専門学校](https://www.anan-nct.ac.jp/)** 創造技術工学科 情報コース 准教授  
-**[豊橋技術科学大学](https://www.tut.ac.jp/)** 大学院工学研究科 客員准教授 （**[音声言語処理研究室](https://slp.cs.tut.ac.jp/)**）  
+**[阿南工業高等専門学校](https://www.anan-nct.ac.jp/)** 創造技術工学科&nbsp;情報コース&nbsp;准教授  
+**[豊橋技術科学大学](https://www.tut.ac.jp/)** 大学院工学研究科&nbsp;客員准教授&nbsp;（**[音声言語処理研究室](https://slp.cs.tut.ac.jp/)**）  
 **[株式会社 Harmonized Interactions](https://harmonized-interactions.com/)** 取締役
 
 ## 主要な研究業績

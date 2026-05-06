@@ -15,6 +15,9 @@ GPUサーバーとして NVIDIA RTX 6000 Ada, RTX A6000 x 2 のほか、
 MacBook Pro M4 Max 128GB, MacBook Pro M4 Max 48GB を必要に応じて利用できます。  
 研究室の Google Colab Pro+ も利用できます。
 
+学生に広い世界を経験してほしいと思っており、学会発表を奨励しています。  
+また、研究室メンバーによる[Google渋谷オフィスの見学](https://www.anan-nct.ac.jp/event/47928/)などを実施しています。
+
 ## 指導学生の学会発表実績
 
 ### 2026

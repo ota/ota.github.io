@@ -4,7 +4,10 @@ nav_title: Works
 order: 3
 ---
 
-※公開可能なものに限定しています。
+## Research and Development
+
+**[Artificial Emotional Intelligence "Saya"](https://aei-saya.jp/)**  
+Sayaおよび[PAL](https://x.com/sayacg/status/1920720838925426696)(©️SQUARE ENIX)の音声合成の研究開発を担当しました。
 
 ## Demo
 

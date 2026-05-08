@@ -45,11 +45,20 @@
   {% endif %}
 
   <style>
+    @font-face {
+      font-family: 'Gen Interface JP Fallback';
+      src: local('Hiragino Sans'), local('Yu Gothic Medium'), local('Yu Gothic'), local('Noto Sans CJK JP'), local('sans-serif');
+      size-adjust: 100%;
+      ascent-override: 105%;
+      descent-override: 25%;
+      line-gap-override: 0%;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --font-body: 'Gen Interface JP', sans-serif;
-      --font-display: 'Gen Interface JP Display', sans-serif;
+      --font-body: 'Gen Interface JP', 'Gen Interface JP Fallback', sans-serif;
+      --font-display: 'Gen Interface JP Display', 'Gen Interface JP Fallback', sans-serif;
 
       --bg: #f5f4f0;
       --surface: #ffffff;

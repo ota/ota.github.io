@@ -2,33 +2,10 @@
 title: Procon - プロコン部
 nav_title: Procon
 order: 4
-meta_description: "阿南高専プログラミング研究部（プロコン部）の全国高専プログラミングコンテスト（高専プロコン）本選出場記録（2013〜2026年）。課題・自由・競技部門の作品名と受賞（優秀賞3回、特別賞6回、競技部門第3位など）を年ごとに掲載。"
+meta_description: "阿南高専プログラミング研究部（プロコン部）の全国高専プログラミングコンテスト（高専プロコン）本選出場記録（2013〜2026年）。課題・自由・競技部門の作品名と受賞を年ごとに掲載。"
 ---
 
 <style>
-  .pc-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
-    gap: 0.625rem;
-    margin: 1.5rem 0 0.75rem;
-  }
-  .pc-stat {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 0.75rem 1rem 0.625rem;
-  }
-  .pc-stat .num {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    line-height: 1.2;
-    color: var(--text);
-  }
-  .pc-stat .num small { font-size: 0.875rem; font-weight: 600; margin-left: 0.125rem; }
-  .pc-stat .label { display: block; font-size: 0.8125rem; color: var(--muted); line-height: 1.5; }
   .pc-note { font-size: 0.8125rem; color: var(--muted); }
   article .pc-table td { word-break: normal; overflow-wrap: anywhere; vertical-align: top; }
   article .pc-table td:first-child { white-space: nowrap; }
@@ -57,19 +34,6 @@ meta_description: "阿南高専プログラミング研究部（プロコン部�
 
 阿南高専プログラミング研究部（プロコン部）の顧問をしています。
 全国高等専門学校プログラミングコンテスト（[高専プロコン](https://www.procon.gr.jp/)）での阿南高専の本選出場記録をまとめました。
-
-## 受賞のまとめ（2013〜2026年）
-
-<div class="pc-stats">
-  <div class="pc-stat"><span class="num">14<small>大会</small></span><span class="label">本選出場（毎年）</span></div>
-  <div class="pc-stat"><span class="num">3<small>回</small></span><span class="label">優秀賞</span></div>
-  <div class="pc-stat"><span class="num">6<small>回</small></span><span class="label">特別賞</span></div>
-  <div class="pc-stat"><span class="num">14<small>回</small></span><span class="label">敢闘賞</span></div>
-  <div class="pc-stat"><span class="num">9<small>件</small></span><span class="label">企業賞・NICT賞</span></div>
-  <div class="pc-stat"><span class="num">第3位</span><span class="label">競技部門（2018年）</span></div>
-</div>
-
-<p class="pc-note">課題部門・自由部門の本選出場は25作品。競技部門は2020年（非開催）を除く毎年、本選に出場しています。</p>
 
 ## 本選出場記録
 

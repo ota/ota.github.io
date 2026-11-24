@@ -8,7 +8,7 @@
 - [Laboratory](https://ota.github.io/laboratory): 阿南高専太田研究室の紹介。研究環境・指導学生の学会発表実績（2014年〜）。研究室・学生への支援・寄附金も歓迎。
 - [Teaching](https://ota.github.io/teaching): 担当授業・校務担当一覧（2013年〜）
 - [Works](https://ota.github.io/works): 研究開発・デモ・ツール・OSS貢献
-- [Procon](https://ota.github.io/procon): 阿南高専プログラミング研究部（プロコン部）の高専プロコン本選出場記録（2013〜2026年）
+- [Procon](https://ota.github.io/procon): 阿南高専プログラミング研究部の高専プロコン本選出場記録（2013〜2026年）
 
 ## Research Areas
 
